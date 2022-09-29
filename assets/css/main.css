@@ -1,0 +1,104 @@
+*{
+    font-family: 'Nunito Sans', sans-serif;
+}
+.text-main{
+    color: #4B2613;
+}
+.logo:hover path{
+    fill: goldenrod;
+}
+.text-main:hover{
+    color: goldenrod;
+}
+footer{
+    background-color: #4B2613;
+    height: 350px;
+}
+main{
+    margin-top: 73px;
+}
+.azza-title{
+    font-family: 'Dancing Script', cursive;
+    font-size: 45px;
+    font-weight: 700;
+}
+.title-main{
+    font-weight: bolder;
+    color: goldenrod;
+}
+header{
+    height: calc(100vh - 73px);
+    background: linear-gradient(0deg, #4B2613 5%, rgba(153, 52, 0, 0) 60%), url(https://azza.az/wp-content/uploads/2020/09/back-01-min.jpg);
+    background-size: 100%;
+    background-position: center;
+    background-attachment: fixed;
+}
+.item{
+    width: 33.333%;
+    transition: .5s;
+    overflow: hidden;
+}
+.item:hover .left-image{
+    left: 0;
+}
+.item:hover .right-image{
+    right: 0;
+}
+.item:hover{
+    background-color: bisque;
+}
+.item-images{
+    height: 420px;
+    background-image: url(https://azza.az/wp-content/themes/azza-theme/images/bg-item-min.png);
+    text-align: center;
+}
+.item .left-image, .item .right-image{
+    bottom: 0;
+    transition: .5s;
+    z-index: 1;
+}
+.item .left-image{
+    left:-100%;
+}
+.item .right-image{
+    right:-100%;
+    bottom: 0;
+}
+.item-images .mid-image{
+    margin: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    top: -10px;
+}
+.line::before, .line::after{
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 60px;
+    height: 1.5px;
+    background-color: black;
+    border-radius: 20px;
+}
+.line::before{
+    left: -75px;
+}
+.line::after{
+    right: -75px;
+}
+.brown{
+    color: #4B2613;
+}
+.red{
+    width: 90px;
+    height: -300px;
+}
+.row {
+    display: flex;
+    
+  }
+.column {
+    flex: 33.33%;
+    padding: 3px;
+}
